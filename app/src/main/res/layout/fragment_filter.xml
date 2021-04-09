@@ -1,0 +1,475 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent">
+
+    <android.support.v4.widget.NestedScrollView
+        android:scrollbars="none"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/ll_select">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/dimen_10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_medium"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="Location"
+            android:textColor="@color/imageCount" />
+
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="6dp"
+            android:layout_margin="@dimen/dimen_5dp"
+            app:cardElevation="3dp">
+
+            <com.google.android.flexbox.FlexboxLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:justifyContent="space_evenly"
+                app:alignItems="center"
+                app:flexWrap="wrap"
+                android:padding="10dp">
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Kolkata"
+                        android:padding="10dp"
+                        android:fontFamily="@font/poppins_regular"
+                        android:layout_margin="10dp"
+                        android:textAllCaps="false"
+                        android:textColor="@color/sbiDesc"
+                        android:id="@+id/kolkata"
+                        app:layout_flexGrow="1"
+                        android:background="@drawable/filter_selector"/>
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_margin="10dp"
+                        android:layout_height="wrap_content"
+                        android:text="Chennai"
+                        android:padding="5dp"
+                        app:layout_flexGrow="1"
+                        android:textColor="@color/sbiDesc"
+                        android:fontFamily="@font/poppins_regular"
+                        android:textAllCaps="false"
+                        android:id="@+id/chennai"
+                        android:background="@drawable/filter_background"/>
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Chennai"
+                        app:layout_flexGrow="1"
+                        android:padding="5dp"
+                        android:textColor="@color/sbiDesc"
+                        android:fontFamily="@font/poppins_regular"
+                        android:layout_margin="10dp"
+                        android:textAllCaps="false"
+                        android:id="@+id/placeOne"
+                        android:background="@drawable/filter_background"/>
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_margin="10dp"
+                        android:padding="5dp"
+                        android:textColor="@color/sbiDesc"
+                        android:fontFamily="@font/poppins_regular"
+                        android:layout_height="wrap_content"
+                        android:text="Chennai"
+                        android:textAllCaps="false"
+                        app:layout_flexGrow="1"
+                        android:id="@+id/placeTwo"
+                        android:background="@drawable/filter_background"/>
+
+            </com.google.android.flexbox.FlexboxLayout>
+        </android.support.v7.widget.CardView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_medium"
+            android:gravity="center"
+            android:padding="5dp"
+            android:layout_marginTop="@dimen/dimen_10dp"
+            android:text="Property Type"
+            android:textColor="@color/imageCount" />
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="6dp"
+            android:layout_margin="@dimen/dimen_5dp"
+            app:cardElevation="3dp">
+
+            <com.google.android.flexbox.FlexboxLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:justifyContent="space_evenly"
+                app:alignItems="center"
+                app:flexWrap="wrap"
+                android:padding="10dp">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:padding="10dp"
+                    android:text="All"
+                    app:layout_flexGrow="1"
+                    android:fontFamily="@font/poppins_regular"
+                    android:textAllCaps="false"
+                    android:id="@+id/all"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/sbiDesc"
+                    android:background="@drawable/filter_background"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_margin="10dp"
+                    android:padding="10dp"
+                    app:layout_flexGrow="1"
+                    android:layout_height="wrap_content"
+                    android:text="Residential"
+                    android:textColor="@color/sbiDesc"
+                    android:fontFamily="@font/poppins_regular"
+                    android:textAllCaps="false"
+                    android:id="@+id/residence"
+                    android:background="@drawable/filter_background"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_margin="10dp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:layout_height="wrap_content"
+                    android:text="Commercial"
+                    android:padding="10dp"
+                    app:layout_flexGrow="1"
+                    android:textColor="@color/sbiDesc"
+                    android:textAllCaps="false"
+                    android:id="@+id/commercial"
+                    android:background="@drawable/filter_background"/>
+
+            </com.google.android.flexbox.FlexboxLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_medium"
+            android:gravity="center"
+            android:padding="5dp"
+            android:layout_marginTop="@dimen/dimen_10dp"
+            android:text="Property Price"
+            android:textColor="@color/imageCount" />
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="6dp"
+            android:layout_margin="@dimen/dimen_5dp"
+            app:cardElevation="3dp">
+
+            <com.google.android.flexbox.FlexboxLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:justifyContent="space_evenly"
+                app:alignItems="center"
+                app:flexWrap="wrap"
+                android:padding="10dp">
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_margin="10dp"
+                        android:layout_height="wrap_content"
+                        android:text="Under 20L"
+                        android:padding="10dp"
+                        app:layout_flexGrow="1"
+                        android:textColor="@color/sbiDesc"
+                        android:fontFamily="@font/poppins_regular"
+                        android:textAllCaps="false"
+                        android:background="@drawable/filter_background"/>
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_margin="10dp"
+                        android:layout_height="wrap_content"
+                        android:text="Under 50L"
+                        app:layout_flexGrow="1"
+                        android:padding="10dp"
+                        android:textColor="@color/sbiDesc"
+                        android:fontFamily="@font/poppins_regular"
+                        android:textAllCaps="false"
+                        android:id="@+id/underFL"
+                        android:background="@drawable/filter_background"/>
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_margin="10dp"
+                        android:padding="10dp"
+                        app:layout_flexGrow="1"
+                        android:layout_height="wrap_content"
+                        android:text="Under 1Cr"
+                        android:textColor="@color/sbiDesc"
+                        android:textAllCaps="false"
+                        android:fontFamily="@font/poppins_regular"
+                        android:background="@drawable/filter_background"/>
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_margin="10dp"
+                        android:padding="10dp"
+                        app:layout_flexGrow="1"
+                        android:layout_height="wrap_content"
+                        android:text="Under 2Cr"
+                        android:textColor="@color/sbiDesc"
+                        android:fontFamily="@font/poppins_regular"
+                        android:textAllCaps="false"
+                        android:background="@drawable/filter_background"/>
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_margin="10dp"
+                        android:padding="10dp"
+                        app:layout_flexGrow="1"
+                        android:textColor="@color/sbiDesc"
+                        android:layout_height="wrap_content"
+                        android:text="Under 3Cr"
+                        android:fontFamily="@font/poppins_regular"
+                        android:textAllCaps="false"
+                        android:background="@drawable/filter_background"/>
+                </com.google.android.flexbox.FlexboxLayout>
+        </android.support.v7.widget.CardView>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_medium"
+            android:gravity="center"
+            android:padding="5dp"
+            android:layout_marginTop="@dimen/dimen_10dp"
+            android:text="Property Status"
+            android:textColor="@color/imageCount" />
+
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="6dp"
+            android:layout_margin="@dimen/dimen_5dp"
+            app:cardElevation="3dp">
+
+        <com.google.android.flexbox.FlexboxLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:justifyContent="space_evenly"
+            app:alignItems="center"
+            app:flexWrap="wrap"
+            android:padding="10dp">
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:textColor="@color/sbiDesc"
+                        android:padding="10dp"
+                        android:layout_margin="10dp"
+                        app:layout_flexGrow="1"
+                        android:layout_height="wrap_content"
+                        android:text="New Launch"
+                        android:fontFamily="@font/poppins_regular"
+                        android:textAllCaps="false"
+                        android:id="@+id/launch"
+                        android:background="@drawable/filter_background"/>
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:textColor="@color/sbiDesc"
+                        android:layout_margin="10dp"
+                        app:layout_flexGrow="1"
+                        android:padding="10dp"
+                        android:layout_height="wrap_content"
+                        android:text="Under Construction"
+                        android:fontFamily="@font/poppins_regular"
+                        android:textAllCaps="false"
+                        android:background="@drawable/filter_background"/>
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_margin="10dp"
+                        android:padding="10dp"
+                        app:layout_flexGrow="1"
+                        android:layout_height="wrap_content"
+                        android:text="Nearing Completion"
+                        android:fontFamily="@font/poppins_regular"
+                        android:textAllCaps="false"
+                        android:textColor="@color/sbiDesc"
+                        android:background="@drawable/filter_background"/>
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_margin="10dp"
+                        android:padding="10dp"
+                        app:layout_flexGrow="1"
+                        android:layout_height="wrap_content"
+                        android:text="Ready to Move In"
+                        android:fontFamily="@font/poppins_regular"
+                        android:textAllCaps="false"
+                        android:textColor="@color/sbiDesc"
+                        android:background="@drawable/filter_background"/>
+
+        </com.google.android.flexbox.FlexboxLayout>
+        </android.support.v7.widget.CardView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_medium"
+            android:gravity="center"
+            android:padding="5dp"
+            android:layout_marginTop="@dimen/dimen_10dp"
+            android:text="BHK"
+            android:textColor="@color/imageCount" />
+
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="6dp"
+            android:layout_margin="@dimen/dimen_5dp"
+            app:cardElevation="3dp">
+<!--        <com.google.android.flexbox.FlexboxLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:justifyContent="flex_start"
+            app:alignItems="flex_start"
+            app:alignContent="center"
+            app:flexDirection="row"
+            app:flexWrap="wrap"
+            android:padding="10dp">-->
+<GridLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:columnCount="3"
+    android:layout_margin="5dp"
+    android:padding="@dimen/dimen_20dp"
+    android:columnOrderPreserved="true"
+    >
+
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:button="@drawable/my_chk"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="1 BHK"
+                        android:layout_margin="5dp"
+                        android:padding="@dimen/dimen_5dp"
+                        android:textColor="#666666" />
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:button="@drawable/my_chk"
+                        android:layout_margin="5dp"
+                        android:padding="@dimen/dimen_5dp"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="1.5 BHK"
+                        android:textColor="#666666" />
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:button="@drawable/my_chk"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="2 BHK"
+                        android:layout_margin="5dp"
+                        android:padding="@dimen/dimen_5dp"
+                        android:textColor="#666666" />
+
+
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:button="@drawable/my_chk"
+                        android:fontFamily="@font/poppins_regular"
+                        android:layout_margin="5dp"
+                        android:padding="@dimen/dimen_5dp"
+                        android:text="3 BHK"
+                        android:textColor="#666666" />
+
+
+
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:button="@drawable/my_chk"
+                        android:layout_margin="5dp"
+                        android:padding="@dimen/dimen_5dp"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="4 BHK"
+                        android:textColor="#666666" />
+
+
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:button="@drawable/my_chk"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="5 BHK"
+                        android:layout_margin="5dp"
+                        android:padding="@dimen/dimen_5dp"
+                        android:textColor="#666666" />
+
+
+
+      <!--  </com.google.android.flexbox.FlexboxLayout>-->
+
+</GridLayout>
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+    <LinearLayout
+        android:id="@+id/ll_select"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+
+            <Button
+                android:id="@+id/btn_close"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="CLOSE"
+                android:textColor="@color/white"
+                android:fontFamily="@font/poppins_semibold"
+                android:background="#b6b6b6"/>
+
+
+            <Button
+                android:id="@+id/btn_apply"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="APPLY"
+                android:textColor="@color/white"
+                android:fontFamily="@font/poppins_semibold"
+                android:background="@color/colorPrimaryDark"/>
+
+    </LinearLayout>
+</RelativeLayout>

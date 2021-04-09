@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProjectsActivity">
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            android:layout_width="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@drawable/toolbar">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="@dimen/dimen_10dp"
+                    android:id="@+id/ic_backProject"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_backspace"/>
+                <TextView
+                    android:layout_toRightOf="@id/ic_backProject"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Projects"
+                    android:textSize="@dimen/textSize_20sp"
+                    android:padding="@dimen/dimen_5dp"
+                    android:layout_centerVertical="true"
+                    android:fontFamily="@font/playfairdisplay_regular"
+                    android:textColor="@color/imageCount" />
+                <android.support.v7.widget.SearchView
+                    android:layout_alignParentRight="true"
+                    android:id="@+id/search"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:defaultQueryHint="Search"
+                    android:paddingRight="@dimen/dimen_15dp"
+                    android:layout_centerVertical="true"
+                    app:searchIcon="@drawable/ic_search"
+                    android:background="@drawable/toolbar"
+
+                    >
+                </android.support.v7.widget.SearchView>
+
+
+            </RelativeLayout>
+        </android.support.v7.widget.Toolbar>
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_below="@id/toolbar"
+            android:id="@+id/project_recycler"
+            android:layout_width="match_parent"
+            android:paddingRight="@dimen/dimen_5dp"
+            android:paddingLeft="@dimen/dimen_5dp"
+            android:layout_height="match_parent">
+
+        </android.support.v7.widget.RecyclerView>
+    </RelativeLayout>
+
+    </android.support.design.widget.CoordinatorLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <android.support.design.widget.FloatingActionButton
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_alignParentRight="true"
+            android:id="@+id/filter"
+            app:layout_anchorGravity="bottom|right|end"
+            android:src="@drawable/ic_done"
+            android:backgroundTint="@color/shareBackground"
+            android:layout_margin="25dp"
+            app:borderWidth="0dp"
+            android:clickable="true"
+            tools:ignore="UnknownId" />
+    </RelativeLayout>
+
+</RelativeLayout>

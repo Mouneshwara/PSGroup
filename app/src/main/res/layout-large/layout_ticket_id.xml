@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/dimen_15dp">
+
+    <TextView
+        android:id="@+id/tv_ps"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:text="PS"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:padding="@dimen/dimen_5dp"
+        android:background="@drawable/blue_circle"
+        android:textSize="18sp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="@dimen/dimen_10dp"
+        android:layout_toRightOf="@id/tv_ps">
+        <TextView
+            android:id="@+id/tv_psGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PS Group"
+            android:textSize="16sp"
+            android:fontFamily="@font/poppins_regular"
+            android:textColor="@color/text"/>
+
+        <TextView
+            android:id="@+id/tv_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ticketid_text"
+            android:textSize="14sp"
+            android:fontFamily="@font/poppins_regular"
+            android:textColor="@color/imageCount"/>
+
+        <TextView
+            android:id="@+id/tv_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dec 2, 2018"
+            android:textSize="14sp"
+            android:paddingTop="@dimen/dimen_5dp"
+            android:fontFamily="@font/poppins_regular"
+            android:textColor="@color/text"/>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nl.psdcompany.duonavigationdrawer.views.DuoDrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/duoDrawerLayout"
+    tools:context="in.psgroup.psgroup.HomeActivity">
+    <nl.psdcompany.duonavigationdrawer.views.DuoMenuView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:tag="@string/tag_menu"
+        app:footer="@layout/nav_header_main" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:tag="@string/tag_content">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/actionBarSize"
+            android:background="@color/colorPrimary"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/ic_groupicon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="50dp"
+                android:visibility="visible"
+                android:layout_marginBottom="5dp"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:padding="15dp"
+                android:src="@drawable/psgroup" />
+            <TextView
+                android:id="@+id/headertext"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:layout_marginRight="50dp"
+                android:layout_marginBottom="5dp"
+                android:text="Notifications"
+                android:fontFamily="@font/playfairdisplay_regular"
+                android:textSize="22sp"
+                android:layout_centerInParent="true"
+                android:foreground="?android:attr/selectableItemBackground" />
+            <ImageView
+                android:id="@+id/ic_notifica"
+                android:layout_width="20dp"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:visibility="gone"
+                android:layout_marginTop="5dp"
+                android:onClick="humbergurCLick"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="20dp"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:src="@drawable/noti_bell" />
+    <ImageView
+        android:id="@+id/ic_notifica_unread"
+        android:layout_width="20dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:visibility="visible"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="20dp"
+        android:onClick="humbergurCLick"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:src="@drawable/noti_bell_read" />
+
+</RelativeLayout>
+        </android.support.v7.widget.Toolbar>
+
+        <FrameLayout
+            android:id="@+id/container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/toolbar"
+            android:background="@android:color/white" />
+      <!--  <LinearLayout
+            android:layout_alignParentBottom="true"
+            android:id="@+id/bottomNavigation"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal"
+            android:layout_gravity="bottom"
+            android:background="@color/bottomNav">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:focusable="true"
+                android:clickable="true"
+                android:onClick="onClick"
+                android:background="?android:attr/selectableItemBackground"
+                android:layout_height="match_parent"
+                android:id="@+id/ps_home">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:id="@+id/ic_home"
+                    android:layout_gravity="center"
+                    android:src="@drawable/homeicon"/>
+                <TextView
+                    android:visibility="gone"
+                    android:id="@+id/tv_home"
+                    android:fontFamily="@font/poppins_regular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/label_home"
+                    android:gravity="center"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="11sp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:focusable="true"
+                android:clickable="true"
+                android:onClick="onClick"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:layout_height="match_parent"
+                android:id="@+id/ps_myproperty">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:id="@+id/ic_property"
+                    android:src="@drawable/vector"/>
+                <TextView
+                    android:visibility="gone"
+                    android:fontFamily="@font/poppins_regular"
+                    android:id="@+id/tv_property"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/label_property"
+                    android:gravity="center"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="11sp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:orientation="vertical"
+                android:focusable="true"
+                android:onClick="onClick"
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:layout_height="match_parent"
+                android:id="@+id/ps_group">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:id="@+id/ic_psgroup"
+                    android:src="@drawable/vectorbuilding"/>
+                <TextView
+                    android:visibility="gone"
+                    android:fontFamily="@font/poppins_regular"
+                    android:id="@+id/tv_psgroup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/label_psgroup"
+                    android:gravity="center"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="11sp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:orientation="vertical"
+                android:focusable="true"
+                android:onClick="onClick"
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:id="@+id/ps_notification">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:id="@+id/ic_notification"
+                    android:src="@drawable/notification"/>
+                <TextView
+                    android:visibility="gone"
+                    android:fontFamily="@font/poppins_regular"
+                    android:id="@+id/tv_notification"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/label_notification"
+                    android:gravity="center"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="11sp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:orientation="vertical"
+                android:focusable="true"
+                android:onClick="onClick"
+                android:clickable="true"
+                android:gravity="center"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:layout_height="match_parent"
+                android:id="@+id/ps_finance">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:id="@+id/ic_finance"
+                    android:src="@drawable/finance"/>
+                <TextView
+                    android:visibility="gone"
+                    android:fontFamily="@font/poppins_regular"
+                    android:id="@+id/tv_finance"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/label_finance"
+                    android:gravity="center"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="11sp"/>
+            </LinearLayout>
+        </LinearLayout>-->
+
+    </RelativeLayout>
+
+
+</nl.psdcompany.duonavigationdrawer.views.DuoDrawerLayout>

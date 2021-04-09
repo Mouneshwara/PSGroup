@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="wrap_content"
+    app:cardBackgroundColor="@color/White"
+    app:cardCornerRadius="8dp"
+    android:layout_margin="@dimen/dimen_5dp">
+
+<RelativeLayout
+    android:id="@+id/card_project"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp">
+                <ImageView
+                    android:id="@+id/ic_project"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/apartment"
+                    android:scaleType="centerCrop"/>
+                <!--<RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:padding="15dp"
+                    android:background="@drawable/cardgradient">
+                </RelativeLayout>-->
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="15dp">
+                <TextView
+                    android:id="@+id/tv_projectName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Arham"
+                    android:fontFamily="@font/playfairdisplay_regular"
+                    android:textColor="@color/imageCount"
+                    android:textSize="@dimen/textSize_20sp"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/tv_type"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="3 BHK, 4 BHK, 5 BHK "
+                            android:fontFamily="@font/poppins_regular"
+                            android:textColor="@color/text"
+                            android:textSize="12sp"/>
+
+                        <TextView
+                            android:id="@+id/tv_projectLandmark"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:maxLines="1"
+                            android:layout_alignParentRight="true"
+                            android:drawableLeft="@drawable/ic_location_on_orange"
+                            android:text="Topsia, Kolkata"
+                            android:textColor="@color/text"
+                            android:textSize="12sp"
+                            android:fontFamily="@font/poppins_regular"/>
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <!--<LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="10dp"
+                android:paddingBottom="15dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Minimum points to be earned: "
+                android:paddingLeft="15dp"
+                android:fontFamily="@font/poppins_light"
+                android:textColor="@color/specText"/>
+
+            <TextView
+                android:id="@+id/tv_toBeEarned"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="80,000"
+                android:fontFamily="@font/poppins_medium"
+                android:textColor="@color/specText"/>
+
+            </LinearLayout>-->
+        </LinearLayout>
+
+</RelativeLayout>
+
+    <!--<RelativeLayout
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="100dp"
+        android:layout_alignParentRight="true"
+        android:background="@color/button">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/rupee"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="2.5 Cr"
+                android:gravity="center"
+                android:singleLine="true"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+         &lt;!&ndash;   <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:layout_gravity="bottom"
+                android:gravity="center_horizontal"
+                android:textSize="10sp"
+                android:fontFamily="@font/poppins_regular"
+                android:text="onwards"
+                android:textColor="@color/white" />&ndash;&gt;
+        </LinearLayout>
+
+    </RelativeLayout>-->
+
+</android.support.v7.widget.CardView>

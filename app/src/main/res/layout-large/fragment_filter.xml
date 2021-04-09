@@ -1,0 +1,479 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:scrollbars="none"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_medium"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="Location"
+            android:textColor="@color/imageCount" />
+
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            app:cardCornerRadius="6dp"
+            app:cardElevation="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="15dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="Kolkata"
+                        android:fontFamily="@font/poppins_regular"
+                        android:layout_margin="10dp"
+                        android:textAllCaps="false"
+                        android:textColor="@color/sbiDesc"
+                        android:id="@+id/kolkata"
+                        android:background="@drawable/filter_background"/>
+
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_margin="10dp"
+                        android:layout_height="wrap_content"
+                        android:text="Chennai"
+                        android:textColor="@color/sbiDesc"
+                        android:fontFamily="@font/poppins_regular"
+                        android:textAllCaps="false"
+                        android:id="@+id/chennai"
+                        android:background="@drawable/filter_background"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="Chennai"
+                        android:textColor="@color/sbiDesc"
+                        android:fontFamily="@font/poppins_regular"
+                        android:layout_margin="10dp"
+                        android:textAllCaps="false"
+                        android:id="@+id/placeOne"
+                        android:background="@drawable/filter_background"/>
+
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_margin="10dp"
+                        android:textColor="@color/sbiDesc"
+                        android:fontFamily="@font/poppins_regular"
+                        android:layout_height="wrap_content"
+                        android:text="Chennai"
+                        android:textAllCaps="false"
+                        android:id="@+id/placeTwo"
+                        android:background="@drawable/filter_background"/>
+
+                </LinearLayout>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/poppins_medium"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="Property Type"
+            android:textColor="@color/imageCount" />
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            app:cardCornerRadius="6dp"
+            app:cardElevation="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp">
+
+                <Button
+                    android:layout_width="95dp"
+                    android:layout_margin="10dp"
+                    android:layout_height="wrap_content"
+                    android:text="All"
+                    android:fontFamily="@font/poppins_regular"
+                    android:textAllCaps="false"
+                    android:id="@+id/all"
+                    android:textColor="@color/sbiDesc"
+                    android:background="@drawable/filter_background"/>
+
+                <Button
+                    android:layout_width="95dp"
+                    android:layout_margin="10dp"
+                    android:layout_height="wrap_content"
+                    android:text="Residential"
+                    android:textColor="@color/sbiDesc"
+                    android:fontFamily="@font/poppins_regular"
+                    android:textAllCaps="false"
+                    android:id="@+id/residence"
+                    android:background="@drawable/filter_background"/>
+
+                <Button
+                    android:layout_width="95dp"
+                    android:layout_margin="10dp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:layout_height="wrap_content"
+                    android:text="Commercial"
+                    android:textColor="@color/sbiDesc"
+                    android:textAllCaps="false"
+                    android:id="@+id/commercial"
+                    android:background="@drawable/filter_background"/>
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/poppins_medium"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="Property Price"
+            android:textColor="@color/imageCount" />
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            app:cardCornerRadius="6dp"
+            app:cardElevation="10dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="15dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <Button
+                        android:layout_width="95dp"
+                        android:layout_margin="10dp"
+                        android:layout_height="wrap_content"
+                        android:text="Under 20L"
+                        android:textColor="@color/sbiDesc"
+                        android:fontFamily="@font/poppins_regular"
+                        android:textAllCaps="false"
+                        android:background="@drawable/filter_background"/>
+
+                    <Button
+                        android:layout_width="95dp"
+                        android:layout_margin="10dp"
+                        android:layout_height="wrap_content"
+                        android:text="Under 50L"
+                        android:textColor="@color/sbiDesc"
+                        android:fontFamily="@font/poppins_regular"
+                        android:textAllCaps="false"
+                        android:id="@+id/underFL"
+                        android:background="@drawable/filter_background"/>
+
+                    <Button
+                        android:layout_width="95dp"
+                        android:layout_margin="10dp"
+                        android:layout_height="wrap_content"
+                        android:text="Under 1Cr"
+                        android:textColor="@color/sbiDesc"
+                        android:textAllCaps="false"
+                        android:fontFamily="@font/poppins_regular"
+                        android:background="@drawable/filter_background"/>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <Button
+                        android:layout_width="95dp"
+                        android:layout_margin="10dp"
+                        android:layout_height="wrap_content"
+                        android:text="Under 2Cr"
+                        android:textColor="@color/sbiDesc"
+                        android:fontFamily="@font/poppins_regular"
+                        android:textAllCaps="false"
+                        android:background="@drawable/filter_background"/>
+
+                    <Button
+                        android:layout_width="95dp"
+                        android:layout_margin="10dp"
+                        android:textColor="@color/sbiDesc"
+                        android:layout_height="wrap_content"
+                        android:text="Under 3Cr"
+                        android:fontFamily="@font/poppins_regular"
+                        android:textAllCaps="false"
+                        android:background="@drawable/filter_background"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_medium"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="Property Status"
+            android:textColor="@color/imageCount" />
+
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            app:cardCornerRadius="6dp"
+            app:cardElevation="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="15dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:textColor="@color/sbiDesc"
+                        android:layout_margin="10dp"
+                        android:layout_height="wrap_content"
+                        android:text="New Launch"
+                        android:fontFamily="@font/poppins_regular"
+                        android:textAllCaps="false"
+                        android:id="@+id/launch"
+                        android:background="@drawable/filter_background"/>
+
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:textColor="@color/sbiDesc"
+                        android:layout_margin="10dp"
+                        android:layout_height="wrap_content"
+                        android:text="Under Construction"
+                        android:fontFamily="@font/poppins_regular"
+                        android:textAllCaps="false"
+                        android:background="@drawable/filter_background"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_margin="10dp"
+                        android:layout_height="wrap_content"
+                        android:text="Nearing Completion"
+                        android:fontFamily="@font/poppins_regular"
+                        android:textAllCaps="false"
+                        android:textColor="@color/sbiDesc"
+                        android:background="@drawable/filter_background"/>
+
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_margin="10dp"
+                        android:layout_height="wrap_content"
+                        android:text="Ready to Move In"
+                        android:fontFamily="@font/poppins_regular"
+                        android:textAllCaps="false"
+                        android:textColor="@color/sbiDesc"
+                        android:background="@drawable/filter_background"/>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_medium"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="BHK"
+            android:textColor="@color/imageCount" />
+
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            app:cardCornerRadius="6dp"
+            app:cardElevation="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="15dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp">
+
+                    <CheckBox
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:button="@drawable/my_chk"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="1 BHK"
+                        android:textColor="#666666" />
+
+                    <CheckBox
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:button="@drawable/my_chk"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="1.5 BHK"
+                        android:textColor="#666666" />
+
+                    <CheckBox
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:button="@drawable/my_chk"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="2 BHK"
+                        android:textColor="#666666" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp">
+
+                    <CheckBox
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:button="@drawable/my_chk"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="2.5 BHK"
+                        android:textColor="#666666" />
+
+                    <CheckBox
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:button="@drawable/my_chk"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="3 BHK"
+                        android:textColor="#666666" />
+
+                    <CheckBox
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:button="@drawable/my_chk"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="3.5 BHK"
+                        android:textColor="#666666" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp">
+
+                    <CheckBox
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:button="@drawable/my_chk"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="4 BHK"
+                        android:textColor="#666666" />
+
+                    <CheckBox
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:button="@drawable/my_chk"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="4.5 BHK"
+                        android:textColor="#666666" />
+
+                    <CheckBox
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:button="@drawable/my_chk"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="5 BHK"
+                        android:textColor="#666666" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp">
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:button="@drawable/my_chk"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="5+ BHK"
+                        android:textColor="#666666" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+    </ScrollView>
+</LinearLayout>

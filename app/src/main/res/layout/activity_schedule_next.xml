@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="in.psgroup.psgroup.ScheduleNextActivity">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:layout_width="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_height="?android:attr/actionBarSize"
+        android:background="@drawable/toolbar">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/ic_back"
+                android:paddingRight="@dimen/dimen_10dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_backspace"/>
+            <TextView
+                android:layout_toRightOf="@id/ic_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Schedule Visit"
+                android:padding="10dp"
+                android:layout_centerVertical="true"
+                android:textSize="@dimen/textSize_20sp"
+                android:fontFamily="@font/playfairdisplay_regular"
+                android:textColor="@color/imageCount" />
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar"
+        android:layout_margin="20dp"
+        android:orientation="vertical">
+
+        <CheckBox
+            android:id="@+id/cb_site"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="   Site"
+            android:layout_marginBottom="20dp"
+            android:textColor="@color/signup"
+            android:button="@drawable/radio_selector"
+            android:fontFamily="@font/poppins_regular"/>
+
+        <CheckBox
+            android:id="@+id/cb_office"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="   Office"
+            android:layout_marginBottom="20dp"
+            android:textColor="@color/signup"
+            android:button="@drawable/radio_selector"
+            android:fontFamily="@font/poppins_regular"/>
+
+
+
+    <!--<android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <EditText
+            android:id="@+id/cust_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Customer Name"
+            android:fontFamily="@font/poppins_regular"
+            android:singleLine="true"
+            android:textColor="@color/default_time_btn"
+            android:inputType="none"/>
+
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <EditText
+            android:id="@+id/cust_no"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Customer Number"
+            android:fontFamily="@font/poppins_regular"
+            android:singleLine="true"
+            android:textColor="@color/default_time_btn"
+            android:inputType="none"/>
+
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <EditText
+            android:id="@+id/property_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_regular"
+            android:hint="Property Name"
+            android:singleLine="true"
+            android:textColor="@color/default_time_btn"
+            android:inputType="none"/>
+
+
+    </android.support.design.widget.TextInputLayout>-->
+
+
+        <TextView
+            android:id="@+id/purpose"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Purpose of Visit"
+            android:textSize="15sp"
+            android:paddingTop="15dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:textColor="@color/kycUpload"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:id="@+id/message"
+            android:layout_height="100dp"
+            android:inputType="textMultiLine"
+            android:padding="@dimen/dimen_5dp"
+            android:hint="Explanation of Purpose of Visit"
+            android:textSize="14sp"
+            android:gravity="top"
+            android:background="@drawable/button_gradiant"
+            />
+
+    </LinearLayout>
+    </ScrollView>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_Schedule"
+        android:stateListAnimator="@null"
+        android:text="SCHEDULE VISIT"
+        android:layout_alignParentBottom="true"
+        android:textColor="@color/white"
+        android:fontFamily="@font/poppins_semibold"
+        android:background="@drawable/button_gradiant2"/>
+
+
+
+
+</RelativeLayout>

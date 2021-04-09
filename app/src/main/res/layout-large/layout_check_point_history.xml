@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="15dp">
+
+    <ImageView
+        android:id="@+id/iv_historyImg"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/check_history_img"/>
+
+    <LinearLayout
+        android:id="@+id/layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="@dimen/dimen_10dp"
+        android:layout_toRightOf="@+id/iv_historyImg">
+
+    <TextView
+        android:id="@+id/tv_pointsEarned"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Points Earned"
+        android:textSize="18sp"
+        android:fontFamily="@font/poppins_regular"
+        android:textColor="@color/imageCount"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/dimen_10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Referred to: "
+                android:textSize="14sp"
+                android:fontFamily="@font/poppins_medium"
+                android:textColor="@color/colorAccent"/>
+
+            <TextView
+                android:id="@+id/tv_referredTo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rohit Verma"
+                android:textSize="14sp"
+                android:fontFamily="@font/poppins_regular"
+                android:textColor="@color/colorAccent"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Property Name: "
+                android:textSize="14sp"
+                android:fontFamily="@font/poppins_medium"
+                android:textColor="@color/colorAccent"/>
+
+            <TextView
+                android:id="@+id/tv_propertyName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Equinox"
+                android:textSize="14sp"
+                android:fontFamily="@font/poppins_regular"
+                android:textColor="@color/colorAccent"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/dimen_10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="When: "
+                android:textSize="14sp"
+                android:fontFamily="@font/poppins_medium"
+                android:textColor="@color/text"/>
+
+            <TextView
+                android:id="@+id/tv_when"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Feb 19 at 12 PM"
+                android:textSize="14sp"
+                android:fontFamily="@font/poppins_regular"
+                android:textColor="@color/text"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_points"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+50,000pts"
+        android:textSize="18sp"
+        android:paddingRight="@dimen/dimen_10dp"
+        android:layout_alignParentRight="true"
+        android:fontFamily="@font/poppins_regular"
+        android:textColor="@color/green"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/layout"
+        android:background="@color/view_point"
+        android:layout_marginTop="@dimen/dimen_10dp"
+        android:layout_marginLeft="@dimen/dimen_10dp"
+        android:layout_marginRight="@dimen/dimen_10dp"/>
+
+</RelativeLayout>

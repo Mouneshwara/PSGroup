@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RedeemNowActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/btn_submit"
+        android:fillViewport="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:paddingTop="25dp"
+        android:background="@color/readList">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/back_white"
+            android:padding="5dp"
+            android:layout_marginLeft="@dimen/dimen_10dp"/>
+
+        <TextView
+            android:id="@+id/tv_pointsEarned"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total Points Earned"
+            android:textColor="@color/white"
+            android:fontFamily="@font/poppins_regular"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:id="@+id/tv_points"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="7500 pts"
+            android:layout_marginTop="@dimen/dimen_5dp"
+            android:layout_below="@id/tv_pointsEarned"
+            android:textColor="@color/White"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/poppins_regular"
+            android:textSize="26sp"/>
+
+    </RelativeLayout>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardCornerRadius="5dp"
+        android:layout_marginBottom="-5dp"
+        android:layout_marginLeft="@dimen/dimen_10dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginRight="@dimen/dimen_10dp"
+        app:cardElevation="@dimen/dimen_5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="@dimen/dimen_20dp"
+            android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Request to redeem"
+            android:textColor="@color/imageCount"
+            android:fontFamily="@font/playfairdisplay_regular"
+            android:textSize="22sp" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_20dp">
+                <EditText
+                    android:id="@+id/et_accHolder"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Account Holder"
+                    android:textSize="16sp"
+                    android:text=""
+                    android:enabled="false"
+                    android:textColor="@color/default_time_btn"
+                    android:fontFamily="@font/poppins_regular" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_20dp">
+                <EditText
+                    android:id="@+id/et_bankName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Bank Name"
+                    android:textSize="16sp"
+                    android:textColor="@color/default_time_btn"
+                    android:enabled="false"
+                    android:text=""
+                    android:fontFamily="@font/poppins_regular" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_20dp">
+                <EditText
+                    android:id="@+id/et_ifscCode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="IFSC Code"
+                    android:textColor="@color/default_time_btn"
+                    android:textSize="16sp"
+                    android:enabled="false"
+                    android:text=""
+                    android:fontFamily="@font/poppins_regular"
+                   />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_20dp">
+                <EditText
+                    android:id="@+id/et_accNo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Account Number"
+                    android:inputType="numberPassword"
+                    android:textSize="16sp"
+                    android:enabled="false"
+                    android:textColor="@color/default_time_btn"
+                    android:text=""
+                    android:fontFamily="@font/poppins_regular" />
+            </android.support.design.widget.TextInputLayout>
+
+            <TextView
+                android:id="@+id/accNoError"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/password"
+                android:layout_marginLeft="5dp"
+                android:text="Enter Valid Account Number"
+                android:textColor="@color/error"
+                android:textSize="12sp"
+                android:visibility="gone"
+                app:fontFamily="@font/poppins_regular" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/layout_accountno"
+                android:visibility="gone"
+                android:orientation="vertical">
+
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_20dp">
+                    <EditText
+                        android:id="@+id/et_confirmAccNo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Confirm Account Number"
+                        android:textSize="16sp"
+                        android:textColor="@color/default_time_btn"
+                        android:text=""
+                        android:inputType="number"
+                        android:fontFamily="@font/poppins_regular"
+                        />
+                </android.support.design.widget.TextInputLayout>
+
+                <TextView
+                    android:id="@+id/confirmAccNoError"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_below="@+id/password"
+                    android:layout_marginLeft="10dp"
+                    android:paddingTop="5dp"
+                    android:text="Account Number did not match"
+                    android:textColor="@color/error"
+                    android:textSize="12sp"
+                    android:visibility="gone"
+                    app:fontFamily="@font/poppins_regular" />
+
+
+            </LinearLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/et_accRedeem"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter POints to Redeem"
+                    android:fontFamily="@font/poppins_regular"
+                    android:textSize="16sp"
+                    android:textColor="@color/default_time_btn"
+                    android:inputType="numberDecimal" />
+            </android.support.design.widget.TextInputLayout>
+
+            <TextView
+                android:id="@+id/tv_amtError"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Please Enter Points"
+                android:textColor="@color/error"
+                android:textSize="12sp"
+                android:visibility="gone"
+                android:paddingLeft="@dimen/dimen_5dp"
+                android:fontFamily="@font/poppins_regular"/>
+
+            <TextView
+                android:id="@+id/tv_pointError"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Please Enter valid points"
+                android:textColor="@color/error"
+                android:paddingLeft="@dimen/dimen_5dp"
+                android:textSize="12sp"
+                android:visibility="gone"
+                android:fontFamily="@font/poppins_regular"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Select Payment Method"
+                android:textColor="@color/text"
+                android:textSize="14sp"
+                android:layout_marginTop="@dimen/dimen_20dp"
+                android:fontFamily="@font/poppins_regular"/>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <Spinner
+        android:id="@+id/payment_type"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@color/White"
+        style="@android:style/Widget.Holo.Light.Spinner"
+        />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/ic_dropdown_arrow" />
+</RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_paymentError"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Please select Payment type"
+                android:textColor="@color/error"
+                android:paddingLeft="@dimen/dimen_5dp"
+                android:textSize="12sp"
+                android:visibility="gone"
+                android:fontFamily="@font/poppins_regular"/>
+
+
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+    </RelativeLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimary"
+        android:text="Submit"
+        android:textColor="@color/White"
+        android:textSize="18sp"/>
+</RelativeLayout>

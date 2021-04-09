@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WriteToUsActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        app:layout_scrollFlags="scroll|enterAlways"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:layout_width="match_parent"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        android:layout_height="?android:attr/actionBarSize">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/ic_back"
+                android:paddingRight="@dimen/dimen_10dp"
+                android:scaleType="centerInside"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_backspace"/>
+            <TextView
+                android:layout_toRightOf="@id/ic_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Write to us"
+                android:padding="5dp"
+                android:textSize="@dimen/textSize_20sp"
+                android:layout_centerVertical="true"
+                android:fontFamily="@font/playfairdisplay_regular"
+                android:textColor="@color/imageCount" />
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:layout_above="@id/btn_submit"
+        android:layout_below="@id/toolbar">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="@dimen/dimen_10dp"
+        android:padding="@dimen/dimen_10dp">
+        <TextView
+            android:id="@+id/tv_issue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="I have an issue with"
+            android:fontFamily="@font/poppins_semibold"
+            android:textColor="@color/kycUpload"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <Spinner
+            android:id="@+id/issueSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@color/White"
+            style="@android:style/Widget.Holo.Light.Spinner"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_dropdown_arrow" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_detailIssue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Details of my issue"
+            android:paddingTop="@dimen/dimen_10dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:textColor="@color/kycUpload"/>
+
+        <EditText
+            android:id="@+id/tv_explainIssue"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:inputType="textMultiLine"
+            android:padding="@dimen/dimen_5dp"
+            android:hint="Explain your issue here"
+            android:textSize="14sp"
+            android:gravity="top"
+            android:background="@drawable/button_gradiant"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/dimen_10dp"
+           >
+
+        <TextView
+            android:id="@+id/tv_uploadPic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Upload a picture"
+            android:fontFamily="@font/poppins_semibold"
+            android:textColor="@color/bottomNav"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=" (optional)"
+                android:layout_toRightOf="@+id/tv_uploadPic"
+                android:fontFamily="@font/poppins_semibold"
+                android:textColor="@color/text"/>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_5dp"
+            android:orientation="horizontal"
+            android:scrollbars="horizontal">
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        >
+
+
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+            <ImageView
+                android:id="@+id/add_photos"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="@dimen/dimen_5dp"
+                app:srcCompat="@drawable/photo_plus" />
+
+
+                    </LinearLayout>
+
+                </HorizontalScrollView>
+
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:textColor="@color/white"
+        android:background="@color/colorPrimary"
+        android:fontFamily="@font/poppins_semibold"
+        android:layout_alignParentBottom="true"/>
+</RelativeLayout>

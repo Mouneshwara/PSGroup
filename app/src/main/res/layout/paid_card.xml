@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<android.support.v7.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="10dp"
+    android:layout_margin="10dp"
+    app:cardElevation="5dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="16dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_regular"
+                android:textColor="@color/specText"
+                android:text="Milestone completed on: "/>
+            <TextView
+                android:id="@+id/milestoneDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_semibold"
+                android:textColor="@color/specText"
+                android:text="Oct25,2017"/>
+        </LinearLayout>
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="0.5dp"
+            android:background="@color/text"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+       android:padding="@dimen/dimen_16dp">
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_centerVertical="true">
+                <TextView
+                    android:id="@+id/apartment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/imageCount"
+                    android:textSize="25sp"
+                    android:fontFamily="@font/playfairdisplay_regular"
+                    android:text="Equinox"/>
+                <TextView
+                    android:id="@+id/doornumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/sbiDesc"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:text="A-501,3BHK"/>
+            </LinearLayout>
+            <Button
+                android:id="@+id/btn_ledger"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="ledger"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="5dp"
+                android:fontFamily="@font/poppins_medium"
+                android:textColor="@color/white"
+                android:background="@drawable/invicebtn_bg"/>
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_light"
+                android:text="Milestone: "
+                android:textColor="@color/imageCount" />
+
+            <TextView
+                android:id="@+id/milestone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Roof Laying"
+                android:textColor="@color/imageCount" />
+        </LinearLayout>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="10dp">
+    <LinearLayout
+        android:id="@+id/lLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Paid on:"
+        android:textSize="12sp"
+        android:textColor="@color/specText"
+        android:fontFamily="@font/poppins_regular"/>
+
+
+    <ImageView
+        android:layout_width="15dp"
+        android:layout_height="10dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/dimen_5dp"
+        android:src="@drawable/calender"/>
+    <TextView
+        android:id="@+id/tv_paidOn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dec14,2017"
+        android:textSize="12sp"
+        android:paddingLeft="3dp"
+        android:textColor="@color/specText"
+        android:fontFamily="@font/poppins_regular"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/lLayout"
+        android:paddingLeft="@dimen/dimen_15dp">
+    <ImageView
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:layout_gravity="center"
+        android:background="@drawable/time"/>
+    <TextView
+        android:id="@+id/tv_paidtime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="  12:09PM"
+        android:textSize="12sp"
+        android:layout_marginLeft="3dp"
+        android:textColor="@color/specText"
+        android:fontFamily="@font/poppins_regular"/>
+    </LinearLayout>
+</RelativeLayout>
+    </LinearLayout>
+    </LinearLayout>
+</android.support.v7.widget.CardView>
+</LinearLayout>

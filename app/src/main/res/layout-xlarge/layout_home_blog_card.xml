@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+
+
+    android:layout_marginTop="@dimen/dimen_5dp"
+    android:layout_marginBottom="@dimen/dimen_5dp"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="3dp"
+            app:cardCornerRadius="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="50dp">
+
+                <ImageView
+                    android:id="@+id/iv_blog_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="350dp"
+                    android:layout_marginBottom="10dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/blog_card_image" />
+                <TextView
+                    android:id="@+id/tv_blog_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="Indian property development sector is like a film industry"
+                    android:textColor="@color/imageCount"
+                    android:textSize="28sp" />
+
+                <TextView
+                    android:id="@+id/tv_blog_by"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="24sp"
+                    android:text="By Rishabh Surana on 18th Sept"
+                    app:fontFamily="@font/poppins_regular" />
+                <TextView
+                    android:id="@+id/tv_blog_desc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_regular"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="5dp"
+                    android:textSize="24sp"
+                    android:text="It has been eight years since I started my career in real estate. From a property advisor to now principal sales with one of the leading real estate developer in India, it has been an incredible journey so far..."
+                    android:textColor="@color/black"
+                    app:fontFamily="@font/poppins_regular" />
+                <TextView
+                    android:id="@+id/blog_read_more"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="READ MORE"
+                    android:textSize="28sp"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:paddingRight="10dp"
+                    android:textColor="@color/colorPrimary"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_regular"
+                    android:textColorHint="@color/specText"
+                    android:textColor="@color/sbiDesc"
+                    android:id="@+id/email"
+                    android:background="@drawable/edittextbackground"
+                    android:padding="10dp"
+                    android:layout_marginTop="@dimen/dimen_5dp"
+                    android:visibility="gone"
+                    android:hint="Enter Email Address"
+                    android:textSize="28sp"/>
+              <Button
+                  android:id="@+id/btn_subscribe"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:text="subscribe to our blogs"
+                  android:layout_marginTop="@dimen/dimen_10dp"
+                  android:textColor="@color/white"
+                  android:textSize="28sp"
+                  android:padding="@dimen/dimen_15dp"
+                  android:visibility="gone"
+                  android:fontFamily="@font/poppins_semibold"
+                  android:foreground="?android:attr/selectableItemBackground"
+                  android:background="@color/button"/>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+    <TextView
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_15dp"
+        android:background="#67b3ff"
+        android:fontFamily="@font/poppins_bold"
+        android:paddingLeft="25dp"
+        android:paddingRight="@dimen/dimen_15dp"
+        android:text="LATEST BLOG"
+        android:textSize="28sp"
+        android:padding="@dimen/dimen_10dp"
+        android:textColor="@color/white" />
+</RelativeLayout>

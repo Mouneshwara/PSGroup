@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="@dimen/dimen_5dp">
+        <ImageView
+            android:id="@+id/tick_icon"
+            android:layout_width="33dp"
+            android:layout_height="33dp"
+            android:src="@drawable/marked"
+            android:padding="5dp"/>
+        <TextView
+            android:id="@+id/benifits"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Low Interest Rates"
+            android:padding="5dp"
+            android:fontFamily="@font/poppins_medium"
+            android:textSize="16sp"
+            android:textColor="@color/imageCount"/>
+</LinearLayout>

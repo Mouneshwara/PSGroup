@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Button android:layout_width="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:textColor="@color/sbiDesc"
+    android:layout_margin="@dimen/dimen_5dp"
+    android:layout_height="wrap_content"
+    android:text="New Launch"
+    android:padding="@dimen/dimen_5dp"
+    android:fontFamily="@font/poppins_regular"
+    android:textAllCaps="false"
+    android:id="@+id/propertyType"
+    android:background="@drawable/filter_selector"
+    xmlns:android="http://schemas.android.com/apk/res/android" />

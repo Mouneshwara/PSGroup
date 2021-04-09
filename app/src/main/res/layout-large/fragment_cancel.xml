@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@null"
+    >
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_20dp"
+        android:layout_marginRight="@dimen/dimen_20dp"
+        app:cardCornerRadius="20dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:text="The Reason i want to cancel my visit is:" />
+
+
+    <CheckBox
+        android:id="@+id/cust"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="custumer asked to cancel"
+        android:layout_marginLeft="20dp"
+        android:textColor="@color/signup"
+        android:button="@drawable/my_chk"
+        android:textSize="18sp"
+        android:fontFamily="@font/poppins_regular"/>
+    <CheckBox
+        android:id="@+id/unav"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Unavialibility of time slot"
+        android:layout_marginLeft="20dp"
+        android:textColor="@color/signup"
+        android:textSize="18sp"
+        android:button="@drawable/my_chk"
+        android:fontFamily="@font/poppins_regular"/>
+    <CheckBox
+        android:id="@+id/sold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Property Sold"
+        android:textSize="18sp"
+        android:layout_marginLeft="20dp"
+        android:textColor="@color/signup"
+        android:button="@drawable/my_chk"
+        android:fontFamily="@font/poppins_regular"/>
+    <CheckBox
+        android:id="@+id/issue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Issues from PS Group side"
+        android:layout_marginLeft="20dp"
+        android:textSize="18sp"
+        android:textColor="@color/signup"
+        android:button="@drawable/my_chk"
+        android:fontFamily="@font/poppins_regular"/>
+
+    <CheckBox
+        android:id="@+id/reason"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="My reason is not listed"
+        android:layout_marginLeft="20dp"
+        android:textColor="@color/signup"
+        android:textSize="18sp"
+        android:button="@drawable/my_chk"
+        android:fontFamily="@font/poppins_regular"/>
+
+    <EditText
+        android:id="@+id/et_mob_No"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textSize="18sp"
+        android:background="@drawable/edittextbackground"
+        android:textColor="@color/default_time_btn" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_cncl"
+        android:text="Cancel"
+        android:layout_margin="@dimen/dimen_10dp"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/poppins_semibold"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:background="@color/button"/>
+
+    </LinearLayout>
+
+
+</android.support.v7.widget.CardView>
+</LinearLayout>

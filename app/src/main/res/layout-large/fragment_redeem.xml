@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Welcome Krish!"
+            android:textColor="@color/colorPrimaryDark"
+            android:gravity="center"
+            android:padding="5dp"
+            android:fontFamily="@font/playfairdisplay_regular"
+            android:textSize="22sp"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:src="@drawable/redeem" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_regular"
+            android:textColor="@color/specText"
+            android:text="Your Points:"
+            android:padding="10dp"
+            android:textSize="18sp"
+            android:gravity="center"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="46000pts"
+            android:padding="5dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:gravity="center"
+            android:fontFamily="@font/poppins_medium"
+            android:textSize="30sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Refer PS group to your friends and earn more points once they are onboard!"
+            android:padding="5dp"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:fontFamily="@font/poppins_regular"
+            android:textColor="@color/search" />
+        <Button
+            android:layout_marginTop="20dp"
+            android:id="@+id/next"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#67b3ff"
+            android:text="Proceed"
+            android:fontFamily="@font/poppins_semibold"
+            android:textColor="@color/white"
+            android:textSize="16sp"/>
+        <EditText
+            android:layout_marginTop="10dp"
+            android:padding="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Terms and Conditions"
+            android:fontFamily="@font/poppins_regular"
+            android:layout_gravity="center"
+            android:editable="false"
+            android:id="@+id/termsConditions"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:textColorHint="@color/colorPrimaryDark"/>
+    </LinearLayout>
+    </ScrollView>
+</LinearLayout>

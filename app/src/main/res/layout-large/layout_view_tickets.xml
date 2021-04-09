@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="@dimen/dimen_10dp"
+    app:cardElevation="@dimen/dimen_5dp"
+    app:cardCornerRadius="5dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/rLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dimen_15dp">
+
+    <TextView
+        android:id="@+id/tv_progressText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fixing Bathroom Lights"
+        android:textSize="18sp"
+        android:fontFamily="@font/poppins_medium"
+        android:textColor="@color/imageCount"/>
+
+        <TextView
+            android:id="@+id/tv_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10th Nov, 2018"
+            android:textSize="14sp"
+            android:layout_alignParentRight="true"
+            android:fontFamily="@font/poppins_regular"
+            android:textColor="@color/text"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingRight="@dimen/dimen_15dp"
+        android:paddingLeft="15dp"
+        android:layout_below="@+id/rLayout">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_ticketId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ticket ID: "
+            android:textSize="16sp"
+            android:fontFamily="@font/poppins_light"
+            android:textColor="@color/imageCount"/>
+
+            <TextView
+                android:id="@+id/tv_ticketNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1820AGDFJ"
+                android:textSize="16sp"
+                android:fontFamily="@font/poppins_light"
+                android:textColor="@color/imageCount"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_alignParentRight="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Category: "
+                android:textSize="14sp"
+                android:layout_alignParentRight="true"
+                android:fontFamily="@font/poppins_regular"
+                android:textColor="@color/text"/>
+
+            <TextView
+                android:id="@+id/tv_category"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bathroom"
+                android:textSize="14sp"
+                android:layout_alignParentRight="true"
+                android:fontFamily="@font/poppins_semibold"
+                android:textColor="@color/text"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/dimen_5dp"
+            android:paddingRight="@dimen/dimen_15dp"
+            android:paddingLeft="@dimen/dimen_15dp"
+            android:paddingBottom="@dimen/dimen_15dp"
+            android:layout_below="@+id/rLayout2">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Status: "
+                    android:textSize="16sp"
+                    android:fontFamily="@font/poppins_light"
+                    android:textColor="@color/imageCount"/>
+
+                <TextView
+                    android:id="@+id/tv_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1820AGDFJ"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/poppins_light"
+                    android:textColor="@color/imageCount"/>
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_alignParentRight="true">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sub-Category: "
+                    android:textSize="14sp"
+                    android:layout_alignParentRight="true"
+                    android:fontFamily="@font/poppins_regular"
+                    android:textColor="@color/text"/>
+
+                <TextView
+                    android:id="@+id/tv_subCategory"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Lights"
+                    android:textSize="14sp"
+                    android:layout_alignParentRight="true"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:textColor="@color/text"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+</android.support.v7.widget.CardView>

@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="15dp">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="8dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp">
+
+                <ImageView
+                    android:id="@+id/ic_property"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/apartment"
+                    android:scaleType="centerCrop"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/cardgradient">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingRight="25dp"
+                        android:paddingLeft="25dp"
+                        android:paddingBottom="10dp"
+                        android:layout_alignParentBottom="true">
+                        <TextView
+                            android:id="@+id/tv_apartmentName"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Equinox"
+                            android:paddingBottom="5dp"
+                            android:fontFamily="@font/playfairdisplay_regular"
+                            android:textSize="20sp"
+                            android:textColor="@color/white"/>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:id="@+id/tv_landMark"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="A-501,"
+                                android:layout_centerVertical="true"
+                                android:fontFamily="@font/poppins_regular"
+                                android:textColor="@color/white"/>
+                            <TextView
+                                android:id="@+id/tv_flatType"
+                                android:layout_toRightOf="@id/tv_landMark"
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="wrap_content"
+                                android:text="3 BHK"
+                                android:layout_centerVertical="true"
+                                android:fontFamily="@font/poppins_regular"
+                                android:textColor="@color/white"/>
+                            <RelativeLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1">
+                                <ImageView
+                                    android:id="@+id/ic_location_image"
+                                    android:layout_width="20dp"
+                                    android:padding="2dp"
+                                    android:layout_height="30dp"
+                                    android:layout_centerVertical="true"
+                                    android:src="@drawable/ic_locationcard" />
+                                <TextView
+                                    android:id="@+id/apartmentLoc"
+                                    android:layout_toRightOf="@id/ic_location_image"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Topsia, Kolkata "
+                                    android:singleLine="true"
+                                    android:textSize="@dimen/textSize_12sp"
+                                    android:layout_centerVertical="true"
+                                    android:fontFamily="@font/poppins_regular"
+                                    android:textColor="@color/white"/>
+                            </RelativeLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp"
+                    android:layout_margin="@dimen/dimen_5dp"
+                    android:paddingBottom="10dp"
+                    android:clipChildren="false">
+
+
+                    <ImageView
+                        android:id="@+id/start_point"
+                        android:layout_width="26dp"
+                        android:layout_height="26dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+
+                        android:paddingTop="@dimen/dimen_5dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/lefthumb"
+                        android:visibility="visible" />
+
+                    <SeekBar
+                        android:id="@+id/seekbar"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_centerVertical="true"
+                        android:max="20"
+                        android:splitTrack="false"
+                        android:progress="10"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginLeft="5dp"
+                        android:progressDrawable="@drawable/seekbar_style"
+                        android:thumb="@drawable/ic_thumb" />
+                    <ImageView
+                        android:id="@+id/end_point"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:scaleType="centerInside"
+                        android:padding="5dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/endthumb"
+                        android:layout_marginRight="10dp"
+                        android:layout_alignParentRight="true" />
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Floor Laying"
+                        android:gravity="center"
+                        android:fontFamily="@font/poppins_regular"
+                        android:id="@+id/tv_laying"
+                        android:textColor="@color/primaryTextColor"/>
+                    <LinearLayout
+                        android:layout_marginBottom="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingBottom="10dp"
+                        android:gravity="center">
+                        <TextView
+                            android:id="@+id/tv_milestone"
+                            android:fontFamily="@font/poppins_regular"
+                            android:layout_width="wrap_content"
+                            android:padding="2dp"
+                            android:layout_height="wrap_content"
+                            android:text="Milestone"/>
+                        <TextView
+                            android:id="@+id/tv_progress"
+                            android:fontFamily="@font/poppins_regular"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" 10/13"
+                            android:padding="2dp"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>
+

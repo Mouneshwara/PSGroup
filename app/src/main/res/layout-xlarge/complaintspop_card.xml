@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="20dp"
+        android:layout_margin="40dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="30dp">
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_margin="20dp"
+                android:layout_gravity="center"
+                android:src="@drawable/requested" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Complain Registered!"
+                android:textColor="#333333"
+                android:fontFamily="@font/montserrat_regular"
+                android:textSize="32sp"
+                android:gravity="center"/>
+
+            <TextView
+                android:layout_marginTop="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#333333"
+                android:text="We received your complaint and assure to assist you within 24 hours!"
+                android:fontFamily="@font/montserrat_regular"
+                android:textSize="24sp"
+                android:padding="20dp"
+                android:lineSpacingExtra="5dp"
+                android:gravity="center"/>
+
+            <Button
+                android:id="@+id/otherDone"
+                android:layout_gravity="center"
+                android:fontFamily="@font/poppins_semibold"
+                android:layout_marginTop="30dp"
+                android:text="DONE"
+                android:textSize="28sp"
+                android:textColor="@color/white"
+                android:background="@drawable/showdowblue"
+                android:layout_width="250dp"
+                android:padding="@dimen/dimen_15dp"
+                android:layout_marginLeft="45dp"
+                android:layout_marginRight="45dp"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

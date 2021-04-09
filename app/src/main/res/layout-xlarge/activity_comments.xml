@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".CommentsActivity">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            app:layout_scrollFlags="scroll|enterAlways"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            android:layout_width="match_parent"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            android:layout_height="?android:attr/actionBarSize">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/ic_backVisit"
+                    android:paddingRight="@dimen/dimen_10dp"
+                    android:scaleType="centerInside"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_backspace"/>
+                <TextView
+                    android:layout_toRightOf="@id/ic_backVisit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Comments"
+                    android:padding="5dp"
+                    android:textSize="28sp"
+                    android:layout_centerVertical="true"
+                    android:fontFamily="@font/playfairdisplay_regular"
+                    android:textColor="@color/imageCount" />
+            </RelativeLayout>
+        </android.support.v7.widget.Toolbar>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/commentRecycle"
+        android:layout_above="@id/comment"
+        android:layout_below="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="15dp">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <RelativeLayout
+        android:id="@+id/comment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/comment_gradient"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/letter"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/ic_visit_dot"
+            android:text="R"
+            android:textSize="28sp"
+            android:fontFamily="@font/poppins_regular"
+            android:gravity="center_vertical"
+            android:textAlignment="center"
+            android:layout_marginRight="10dp"
+            android:textColor="@color/white"
+            />
+
+        <EditText
+            android:id="@+id/et_text"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:fontFamily="@font/poppins_regular"
+            android:layout_gravity="center"
+            android:hint="Add a comment"
+            android:layout_toRightOf="@id/letter"
+            android:inputType="textMultiLine"
+            android:textSize="24sp"
+            android:background="@null"
+            android:paddingLeft="10dp"
+            android:paddingRight="45dp" />
+
+        <ImageView
+            android:id="@+id/iv_send"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_send"
+            android:visibility="gone"
+            android:paddingRight="@dimen/dimen_10dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

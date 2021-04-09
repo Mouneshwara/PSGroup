@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/dimen_10dp">
+
+    <TextView
+        android:id="@+id/tv_r"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:text="R"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:padding="5dp"
+        android:fontFamily="@font/poppins_regular"
+        android:background="@drawable/blue_circle"
+        android:textSize="18sp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="@dimen/dimen_10dp"
+        android:layout_toRightOf="@id/tv_r">
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rohit Verma"
+            android:textSize="15sp"
+            android:fontFamily="@font/poppins_regular"
+            android:textColor="@color/text"/>
+
+        <TextView
+            android:id="@+id/tv_comment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Close to everything and walking distance from the metro station. "
+            android:textSize="15sp"
+            android:fontFamily="@font/poppins_regular"
+            android:textColor="@color/imageCount"/>
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="23min ago"
+            android:textSize="15sp"
+            android:paddingTop="@dimen/dimen_5dp"
+            android:fontFamily="@font/poppins_regular"
+            android:textColor="@color/text"/>
+    </LinearLayout>
+
+</RelativeLayout>

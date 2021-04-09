@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/dimen_10dp"
+    android:id="@+id/lLayout"
+    android:orientation="vertical">
+
+
+    <com.codesgood.views.JustifiedTextView
+        android:id="@+id/tv_question"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="What is the process of registration and when does registration take place?"
+        android:textSize="16sp"
+        android:layout_margin="@dimen/dimen_10dp"
+        android:fontFamily="@font/poppins_regular"
+        android:textColor="@color/imageCount"
+        android:padding="@dimen/dimen_5dp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/blacknine"/>
+
+</LinearLayout>

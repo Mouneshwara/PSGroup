@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RadioButton android:layout_width="wrap_content"
+    android:layout_margin="5dp"
+    android:layout_height="wrap_content"
+    android:button="@color/transparent"
+    android:layout_columnWeight="1"
+    android:text="Under 1Cr"
+    style="@style/Base.Widget.AppCompat.Button"
+    android:textColor="@color/sbiDesc"
+    android:textAllCaps="false"
+    android:id="@+id/propertyPrice"
+    android:fontFamily="@font/poppins_regular"
+    android:background="@drawable/filter_selector"
+    xmlns:android="http://schemas.android.com/apk/res/android" />

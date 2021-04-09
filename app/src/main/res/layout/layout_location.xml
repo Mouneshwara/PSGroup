@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Button android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Kolkata"
+    android:layout_margin="5dp"
+    android:fontFamily="@font/poppins_regular"
+    android:textAllCaps="false"
+    android:textColor="@color/sbiDesc"
+    android:id="@+id/btn_location"
+    android:background="@drawable/filter_selector"
+    xmlns:android="http://schemas.android.com/apk/res/android" />

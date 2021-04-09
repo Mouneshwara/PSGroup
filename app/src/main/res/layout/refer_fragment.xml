@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Welcome Krish!"
+                android:textColor="@color/colorPrimaryDark"
+                android:gravity="center"
+                android:padding="5dp"
+                android:fontFamily="@font/playfairdisplay_regular"
+                android:textSize="18sp"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="390dp"
+                android:src="@drawable/redeem" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_medium"
+                android:textColor="@color/colorPrimary"
+                android:text="Refer and Earn!"
+                android:padding="5dp"
+                android:textSize="@dimen/textSize_20sp"
+                android:gravity="center"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Refer PS group to your friends and earn more points once they are onboard!"
+                android:padding="5dp"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:fontFamily="@font/poppins_regular"
+                android:textColor="@color/search" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Your referral ID:"
+                android:padding="5dp"
+                android:gravity="center"
+                android:fontFamily="@font/poppins_regular"
+                android:textColor="@color/search" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="3857HU8"
+                android:gravity="center"
+                android:textSize="24sp"
+                android:fontFamily="@font/poppins_regular"
+                android:textColor="@color/search"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.7dp"
+                android:background="@color/inputEdit"/>
+            <Button
+                android:layout_marginTop="20dp"
+                android:id="@+id/share"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#67b3ff"
+                android:text="Share"
+                android:fontFamily="@font/poppins_semibold"
+                android:textColor="@color/white"
+                android:textSize="16sp"/>
+            <EditText
+                android:layout_marginTop="10dp"
+                android:padding="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Terms and Conditions"
+                android:fontFamily="@font/poppins_regular"
+                android:layout_gravity="center"
+                android:editable="false"
+                android:id="@+id/referTermsConditions"
+                android:backgroundTint="@color/colorPrimaryDark"
+                android:textColorHint="@color/colorPrimaryDark"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

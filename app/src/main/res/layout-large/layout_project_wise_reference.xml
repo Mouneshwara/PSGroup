@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_margin="@dimen/dimen_5dp">
+
+    <RelativeLayout
+        android:id="@+id/rLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dimen_10dp">
+
+    <TextView
+        android:id="@+id/tv_arham"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Arham "
+        android:textSize="18sp"
+        android:fontFamily="@font/poppins_regular"
+        android:textColor="@color/imageCount"/>
+
+    <TextView
+        android:id="@+id/tv_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="(5)"
+        android:textSize="18sp"
+        android:layout_toRightOf="@id/tv_arham"
+        android:fontFamily="@font/poppins_regular"
+        android:textColor="@color/imageCount"/>
+
+    <ImageView
+        android:id="@+id/iv_down"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/down"
+        android:padding="@dimen/dimen_10dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/dimen_10dp"/>
+
+    <ImageView
+        android:id="@+id/iv_up"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/up"
+        android:layout_alignParentRight="true"
+        android:padding="@dimen/dimen_10dp"
+        android:visibility="gone"
+        android:layout_marginRight="@dimen/dimen_10dp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/opacity"
+            android:layout_below="@id/tv_arham"
+            android:layout_marginTop="@dimen/dimen_10dp"/>
+
+    </RelativeLayout>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler"
+        android:layout_below="@id/rLayout"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="wrap_content">
+
+    </android.support.v7.widget.RecyclerView>
+
+
+</RelativeLayout>

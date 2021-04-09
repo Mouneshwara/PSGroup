@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_width="0dp"
+        android:fontFamily="@font/poppins_medium"
+        android:layout_weight="1"
+        android:textSize="24sp"
+        android:layout_height="wrap_content"
+        android:text="Tower 1"/>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:gravity="right"
+        android:id="@+id/view"
+        android:fontFamily="@font/poppins_medium"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:text="VIEW"/>
+
+    </LinearLayout>
+
+</LinearLayout>

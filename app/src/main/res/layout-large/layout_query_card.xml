@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="@dimen/dimen_5dp"
+    android:paddingBottom="@dimen/dimen_5dp"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:layout_marginLeft="@dimen/dimen_10dp"
+        android:layout_marginRight="@dimen/dimen_10dp">
+
+        <TextView
+            android:id="@+id/category_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Agreement"
+            android:fontFamily="@font/poppins_medium"
+            android:layout_toLeftOf="@+id/arrowDown"
+            android:textSize="22sp"
+            android:textColor="@color/imageCount"/>
+
+        <ImageView
+            android:id="@+id/arrowDown"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_keyboard_arrow_down"
+            android:padding="5dp"/>
+        <ImageView
+            android:visibility="gone"
+            android:id="@+id/arrowUp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_keyboard_arrow_up"
+            android:layout_alignParentRight="true"
+            android:padding="5dp"/>
+    </RelativeLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/explaination"
+            android:padding="@dimen/dimen_5dp"
+            android:layout_marginLeft="@dimen/dimen_10dp"
+            android:layout_marginRight="@dimen/dimen_10dp"
+            android:textSize="22sp"
+            android:background="?android:attr/selectableItemBackground"
+            android:text="Explanation of clause status"
+            android:textColor="@color/colorPrimary"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.3dp"
+        android:background="#000000"/>
+
+</LinearLayout>

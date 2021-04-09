@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="5dp"
+        android:layout_margin="10dp"
+        app:cardElevation="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:padding="@dimen/dimen_10dp">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_centerVertical="true">
+                        <TextView
+                            android:id="@+id/apartment"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/imageCount"
+                            android:textSize="28sp"
+                            android:fontFamily="@font/playfairdisplay_regular"
+                            android:text="Equinox"/>
+                        <TextView
+                            android:id="@+id/doornumber"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/sbiDesc"
+                            android:layout_marginTop="5dp"
+                            android:textSize="24sp"
+                            android:fontFamily="@font/poppins_regular"
+                            android:text="A-501,3BHK"/>
+                    </LinearLayout>
+                    <Button
+                        android:id="@+id/btn_invoice"
+                        android:layout_width="150dp"
+                        android:layout_height="40dp"
+                        android:text="INVOICE"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="5dp"
+                        android:textSize="24sp"
+                        android:textColor="@color/white"
+                        android:background="@drawable/invicebtn_bg"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/dimen_10dp">
+
+                    <LinearLayout
+                        android:id="@+id/lLayout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Total Amount Due"
+                            android:fontFamily="@font/poppins_light"
+                            android:textSize="22sp"
+                            android:textColor="@color/imageCount"/>
+
+                        <TextView
+                            android:id="@+id/tv_amountDue"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="₹ 1,20,000"
+                            android:fontFamily="@font/poppins_medium"
+                            android:textSize="22sp"
+                            android:textColor="@color/imageCount"/>
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="35dp"
+                        android:layout_toRightOf="@id/lLayout"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/dimen_10dp"
+                        android:background="@color/opacity"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_centerInParent="true">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Pending By"
+                            android:fontFamily="@font/poppins_light"
+                            android:textSize="22sp"
+                            android:textColor="@color/imageCount"/>
+
+                        <TextView
+                            android:id="@+id/tv_pendingDays"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="92 days"
+                            android:fontFamily="@font/poppins_medium"
+                            android:textSize="22sp"
+                            android:textColor="@color/redtext"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_alignParentRight="true"
+                        android:paddingRight="5dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Interest Charged"
+                            android:fontFamily="@font/poppins_light"
+                            android:textSize="22sp"
+                            android:textColor="@color/imageCount"/>
+
+                        <TextView
+                            android:id="@+id/tv_interest"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="₹ 15,000"
+                            android:fontFamily="@font/poppins_medium"
+                            android:textSize="22sp"
+                            android:textColor="@color/imageCount"/>
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/text"
+                    android:layout_marginTop="@dimen/dimen_20dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/dimen_10dp"
+                    android:paddingTop="@dimen/dimen_10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Milestone ‘Roof Laying’ completed on:"
+                        android:fontFamily="@font/poppins_regular"
+                        android:textSize="22sp"
+                        android:textColor="@color/text"/>
+
+                    <TextView
+                        android:id="@+id/tv_milestone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Oct 25, 2017 "
+                        android:fontFamily="@font/poppins_semibold"
+                        android:textSize="22sp"
+                        android:textColor="@color/text"/>
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

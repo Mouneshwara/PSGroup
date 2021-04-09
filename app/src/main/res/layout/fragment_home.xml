@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/menu_gradient"
+    android:orientation="vertical">
+
+   <!-- <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/ic_groupicon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="70dp"
+                android:visibility="visible"
+                android:layout_marginBottom="5dp"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:padding="15dp"
+                android:src="@drawable/psgroup" />
+
+            <ImageView
+                android:id="@+id/ic_notifica"
+                android:layout_width="40dp"
+                android:layout_height="60dp"
+                android:layout_alignParentRight="true"
+                android:padding="@dimen/dimen_10dp"
+                android:layout_marginTop="5dp"
+                android:onClick="humbergurCLick"
+                android:layout_marginRight="10dp"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:src="@drawable/noti_bell" />
+
+            <TextView
+                android:id="@+id/notification_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@id/ic_notifica"
+                android:layout_margin="5dp"
+                android:background="@drawable/notification_background"
+                android:fontFamily="@font/poppins_medium"
+                android:gravity="center"
+                android:layoutDirection="rtl"
+                android:text=""
+                android:textColor="@color/colorPrimary" />
+
+
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>-->
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:id="@+id/rl_myproperties"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingBottom="15dp">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:fontFamily="@font/playfairdisplay_regular"
+                    android:paddingTop="5dp"
+                    android:paddingRight="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="My Properties"
+                    android:textColor="@color/white"
+                    android:textSize="22sp" />
+                <!-- <TextView
+                     android:id="@+id/tv_viewall"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:text="VIEW ALL"
+                     android:paddingTop="5dp"
+                     android:layout_marginLeft="@dimen/dimen_5dp"
+                     android:fontFamily="@font/poppins_semibold"
+                     android:layout_centerVertical="true"
+                     android:textColor="@color/white"
+                     android:layout_alignParentRight="true"/>-->
+            </RelativeLayout>
+
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/cardView"
+                android:layout_width="match_parent"
+                android:layout_height="230dp"
+                android:layout_gravity="center"
+                android:clipToPadding="false">
+
+            </android.support.v4.view.ViewPager>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="15dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:fontFamily="@font/playfairdisplay_regular"
+                android:paddingTop="5dp"
+                android:paddingRight="5dp"
+                android:paddingBottom="5dp"
+                android:text="Home Feed"
+                android:textColor="@color/white"
+                android:textSize="22sp" />
+
+
+
+        </LinearLayout>
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/offerViewPager"
+                android:layout_width="match_parent"
+                android:layout_height="280dp"
+                android:layout_marginTop="@dimen/dimen_15dp"
+                android:layout_gravity="center"
+                android:clipToPadding="false"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+
+
+                <include
+                    layout="@layout/neighbours_card"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_15dp" />
+
+
+            </LinearLayout>
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/launchViewPager"
+                android:layout_width="match_parent"
+                android:layout_height="350dp"
+                android:layout_gravity="center"
+                android:clipToPadding="false"/>
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/blogViewPager"
+                android:layout_width="match_parent"
+                android:layout_height="480dp"
+                android:layout_marginTop="@dimen/dimen_15dp"
+                android:layout_gravity="center"
+                android:clipToPadding="false">
+
+            </android.support.v4.view.ViewPager>
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</LinearLayout>

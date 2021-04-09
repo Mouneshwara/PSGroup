@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SplashScreenActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@drawable/splashscreen"
+        android:layout_height="match_parent">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:padding="30dp"
+            android:src="@drawable/psgroup" />
+        <RelativeLayout
+            android:layout_width="380dp"
+            android:layout_height="350dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true">
+            <View
+                android:layout_width="match_parent"
+                android:background="@color/splashView"
+                android:layout_height="1dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="It’s Family Time"
+                android:textSize="80sp"
+                android:padding="15dp"
+                app:fontFamily="@font/playfairdisplay_regular"
+                android:gravity="center"
+                android:layout_centerVertical="true"
+                android:textColor="@color/white"/>
+            <View
+                android:layout_width="match_parent"
+                android:background="@color/splashView"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>
